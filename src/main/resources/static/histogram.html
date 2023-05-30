@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Histogram</title>
+        <link rel = "stylesheet" href = "histogram.css">
+        <script src = "calculate.js" defer></script>
+    </head>
+
+    <body>
+    
+        <header><h1>Histogram Generator</h1></header>
+
+        <main>
+            <div class = "page">
+                <div style = "float: left">
+                    <p style = "color: #b5131a"><b>Lower bounds</b></p>
+                    <table>
+                        <tr>
+                            <td><tab></tab>Max</td>
+                            <td><input class = "Max" value = 100.00></td>
+                        </tr>
+                        <tr>
+                            <td>A+</td>
+                            <td><input class = "A+ Bound" value = 95.00></td>
+                        </tr>
+                        <tr>
+                            <td>A</td>
+                            <td><input class = "A Bound" value = 90.00></td>
+                        </tr>
+                        <tr>
+                            <td>A-</td>
+                            <td><input class = "A- Bound" value = 85.00></td>
+                        </tr>
+                        <tr>
+                            <td>B+</td>
+                            <td><input class = "B+ Bound" value = 80.00></td>
+                        </tr>
+                        <tr>
+                            <td>B</td>
+                            <td><input class = "B Bound" value = 75.00></td>
+                        </tr>
+                        <tr>
+                            <td>B-</td>
+                            <td><input class = "B- Bound" value = 70.00></td>
+                        </tr>
+                        <tr>
+                            <td>C+</td>
+                            <td><input class = "C+ Bound" value = 65.00></td>
+                        </tr>
+                        <tr>
+                            <td>C</td>
+                            <td><input class = "C Bound" value = 60.00></td>
+                        </tr>
+                        <tr>
+                            <td>C-</td>
+                            <td><input class = "C- Bound" value = 55.00></td>
+                        </tr>
+                        <tr>
+                            <td>D</td>
+                            <td><input class = "D Bound" value = 50.00></td>
+                        </tr>
+                        <tr>
+                            <td>F</td>
+                            <td><input class = "F Bound" value = 0.00></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div style = "float: left">
+                    <p style = "color: #b5131a"><b>Histogram</b></p>
+                    <table>
+                        <tr>
+                            <td>A+</td>
+                            <td class = "A+"><div class = "square"></div></td>
+                        </tr>
+                        <tr>
+                            <td>A</td>
+                            <td class = "A"><div class = "square"></div></td>
+                        </tr>
+                        <tr>
+                            <td>A-</td>
+                            <td class = "A-"><div class = "square"></div></td>
+                        </tr>
+                        <tr>
+                            <td>B+</td>
+                            <td class = "B+"><div class = "square"></div></td>
+                        </tr>
+                        <tr>
+                            <td>B</td>
+                            <td class = "B"><div class = "square"></div></td>
+                        </tr>
+                        <tr>
+                            <td>B-</td>
+                            <td class = "B-"><div class = "square"></div></td>
+                        </tr>
+                        <tr>
+                            <td>C+</td>
+                            <td class = "C+"><div class = "square"></div></td>
+                        </tr>
+                        <tr>
+                            <td>C</td>
+                            <td class = "C"><div class = "square"></div></td>
+                        </tr>
+                        <tr>
+                            <td>C-</td>
+                            <td class = "C-"><div class = "square"></div></td>
+                        </tr>
+                        <tr>
+                            <td>D</td>
+                            <td class = "D"><div class = "square"></div></td>
+                        </tr>
+                        <tr>
+                            <td>F</td>
+                            <td class = "F"><div class = "square"></div></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div style = "float: left">
+                    <p style = "float: left; font-size: 1em; margin-top: 27px; margin-right: 0px;"><b>New Grade:</b></p>
+                    <input style = "float: left; width: 100px; margin-top: 20px; margin-left: -10px; margin-bottom: 155px;" class = "New">
+                    <input style = "float: left; width: 100px; padding-left: 0px; margin-top: 22px; margin-left: 10px; background-color: #1a73e8; color: white; border: 0px solid white;" type = "submit" Value = "Submit">
+                    <p class = "Error" style = "color: red"></p>
+                </div>
+            </div>
+        </main>
+
+    </body>
+
+</html>
